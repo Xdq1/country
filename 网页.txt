@@ -1,0 +1,25 @@
+<script>
+mk="Ó°ÊÓ´«²¥"
+mk1=mk.length
+mk2=""
+mk3=0
+for(x=0;x<mk1;x++)
+{
+	mk2+='DIVId=L'+x+'STYLE="position:absolute">'+mk.charAt(x)+'</DIV>'
+}
+document.write(mk2)
+window.setInterval("mk5()",1)
+function mk5()
+{
+	mk3-=0.005
+	for(x=0;x<mk1;x++)
+	{
+		mk4=mk3+0.9*x
+		var mk6=document.all("L"+x)
+		mk2.style.posLeft=350+200*Math.sin(mk4)
+		mk2.style.posTop=100
+		mk2.style.fontSize=70+60*Math.cos(mk4)
+		nmk2.style.color="rgb"+"("+(300+300*Math.cos(mk4))+","+99+","+99+")"
+	}
+}
+</script>
